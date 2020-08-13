@@ -8,9 +8,9 @@ axios({
     "useQueryString": true
   }, "params": {
     "to": "07xyzzzzzz",
-    "message": "test",
-    "connection_id": "... connection id ...",
-    "password": "... password ..."
+    "message": "My Test Message",
+    "connection_id": "... My Connection ID ...",
+    "password": "... My Connection Password ..."
   }
 })
   .then((response) => {
