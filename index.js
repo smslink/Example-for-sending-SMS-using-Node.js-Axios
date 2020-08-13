@@ -1,5 +1,12 @@
 const axios = require("axios");
 
+/* 
+
+  Get your SMS Gateway Connection ID and Password from 
+  https://www.smslink.ro/get-api-key/
+
+*/
+
 axios({
   "method": "GET",
   "url": "https://secure.smslink.ro/sms/gateway/communicate/index.php",
@@ -9,8 +16,8 @@ axios({
   }, "params": {
     "to": "07xyzzzzzz",
     "message": "My Test Message",
-    "connection_id": "... My Connection ID ...",
-    "password": "... My Connection Password ..."
+    "connection_id": "... My SMS Gateway Connection ID ...",
+    "password": "... My SMS Gateway Connection Password ..."
   }
 })
   .then((response) => {
